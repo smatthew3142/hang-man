@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>Zoo Hangman</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+
+	<link  rel="stylesheet" href="./assets/css/style.css">
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+
+
+  </head>
+ 
+ <body>
+
+	  <div class="container">
+
+	    <div class="jumbotron">
+	      <h1 class="text-center"><strong>Welcome to the Zoo!</strong></h1>
+	    </div>
+	</div>
+
+	<div class="container">
+	    <div class="row">
+	    	<div class="col-lg-12">
+	        	<div class="panel">
+	        		<div class="panel-heading">
+	        			<h1 class="panel-title">Guess the Animal</h1>
+	          		</div>
+	          		<div class="panel-body">
+	          			<div class="text-center">
+	          			<h2>Press 'Enter' to start a new game!</h2>
+	          		</div>
+
+	          			<div class="col-lg-12">
+	          				
+	            			<div id="blankWord"></div>
+
+            				<p>
+            					Guessed Letters:
+                				<div id="lettersGuessed">
+                					
+                				</div>
+            				</p>
+
+            				<p>
+            					Guesses Remaining: 
+            					<span id="lives">10</span>
+            				</p>
+            			</div>
+
+            			<div class="col-lg-12">
+            				<p>
+            					Wins: <span id="winCount">0</span>
+            				</p>
+            				
+            				<p>
+            					Losses: <span id="lossCount">0</span>
+            				</p>
+            			<span id="message"></span>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+    </div>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	<footer>
+		<a href="https://www.freepik.com/free-vector/hand-painted-giraffe-pattern_810974.htm">Background designed by Freepik</a>
+	</footer>
+
+	
+
+  </body>
+  </html>

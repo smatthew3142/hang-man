@@ -1,0 +1,47 @@
+
+
+html, body {
+  width: 100%;
+  height: auto;
+
+}
+
+body {
+	background: url(../images/Giraffe_PRINT.png) repeat;	
+}
+
+
+footer {
+  clear: both;
+  width: 100%;
+  color: #51512f;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 40px;
+}
+
+.jumbotron {
+	color: #51512f;
+	border-color: #51512f;
+	margin: 25px;
+}
+
+.panel {
+	
+	background-color: #83844a;
+	font-size: 24px;
+	margin: 5px;
+	text-align: center;
+}
+
+.panel h2{
+	font-size: 36px;
+}
+
+
+
+.panel-title {
+	color: #FFFFFF;
+	font-size: 48px;
+}
+
