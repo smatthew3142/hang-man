@@ -120,7 +120,7 @@ if (isLetter == true && alreadyGuess == false && correctLetter == false) {
 //take away guess for wrong letter
 
 if (lettersGuess.length == 10) {
-        $('#message').html(message.loss);
+        $('#message').html(message.lose);
         lettersGuess = [];
         $('#lettersGuess').html(lettersGuess);
         //if you lose, loss counter goes up
@@ -131,14 +131,12 @@ if (lettersGuess.length == 10) {
         newGame();
     }
 
-
-
-
 //reset after key
 
 correctLetter = false;
 isLetter = false;
 alreadyGuess = false;
+
 
 //user wins
 
@@ -152,6 +150,8 @@ function win() {
 
     if (newWinner == true) {
         $('#message').html(message.win);
+        }
+
         winCount++;
         $('#winCount').html(winCount);
         lettersGuess = [];
@@ -164,6 +164,6 @@ function win() {
 
     newWinner = true;
 }
-}
+
 
 
