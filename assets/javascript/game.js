@@ -101,9 +101,11 @@ for (var i = 0; i < newWord.length; i++) {
         if (newWord[i] === userGuess) {
             blankWord[i] = newWord[i];
             correctLetter = true;
+            console.log("match");
+            
         }
     }
-
+if (correctLetter== true) win();
 
 
 //guessed letters into array
@@ -142,15 +144,20 @@ alreadyGuess = false;
 
 function win() {
 
+
+    newWinner = true;
+
     for (var i = 0; i < newWord.length; i++) {
         if (blankWord[i] == " _ ") {
             newWinner = false;
         }
     }
 
+    console.log("newWinner = " + newWinner);
+
+
     if (newWinner == true) {
         $('#message').html(message.win);
-        }
 
         winCount++;
         $('#winCount').html(winCount);
@@ -161,8 +168,9 @@ function win() {
 
         newGame();
     }
+}
 
-    newWinner = true;
+    
 }
 
 
